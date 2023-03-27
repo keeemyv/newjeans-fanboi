@@ -1,0 +1,275 @@
+/* Normal */
+img {
+    width: 100%;
+}
+
+body {
+    color: #284377;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: lightblue;
+    box-shadow: 0 1px 4px hsl(0 4 15% / 10%);
+    z-index: 4;
+}
+
+section {
+    padding: 0px 0 10px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+/* Class */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    width: 100%;
+}
+
+.title {
+    font-size: 3.3rem;
+    text-align: center; 
+    font-family: 'Brush Script MT', 'cursive'; 
+}
+
+.shop {
+    margin-top: 0px;
+}
+
+.shop-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px, auto));
+    gap: 48px;
+}
+
+.merch {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6px;
+}
+
+.item-name {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+}
+
+.addtocart {
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 243px;
+    bottom: 50px;
+    background-color: lightblue;
+    position: relative;
+    z-index: 2;
+}
+
+/* .disc {
+    margin-left: 150px;
+}
+.poster {
+    margin-left: 206px;
+} */
+
+.cartlogo {
+    font-size: 50px;
+    cursor: pointer;
+    color: #284377;
+}
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: whitesmoke;
+    transition: 0.5s;
+}
+
+.cart.active {
+    right: 0;
+}
+
+.cart-title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.merch-added {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.items-added {
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;    
+    grid-template-columns: 32% 50% 18%;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.item-info {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.fa-trash {
+    font-size: 1.4rem;
+    color: lightcoral;
+    cursor: pointer;
+    margin-right: 100px;    
+
+}
+
+.merch-name {
+    font-size: 1.1rem;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    border-top: 1px solid lightslategray;
+}
+
+.total-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.total-spent {
+    margin-left: 12px;
+    margin-top: 1rem;
+}
+
+.buy {
+    display: flex;
+    margin: 20px auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: #284377;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer; 
+    border-radius: 5px;
+}
+
+
+
+/* ID */
+#close {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    font-size: 1.5rem;
+    padding: 0px;
+    cursor: pointer;
+}
+
+
+/* CAROUSELL */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+
+.slideshow-container {
+  width: 102%;
+  right: 8px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  margin-left: 10px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  
+  right: 0;
+  margin-right: 28px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
